@@ -12,6 +12,8 @@
 
     <?php
 
+include 'connect.php';
+
 $campak         = [0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0];
 $eksim          = [0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0];
 $erisipelas     = [0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0];
@@ -39,6 +41,7 @@ $lukaakibatsengatanlistrik = [0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,
 $milia          = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0];
 
 if(isset($_POST['predict'])){
+    
     $question1 = $_POST['question1'];
     $question2 = $_POST['question2'];
     $question3 = $_POST['question3'];
@@ -88,60 +91,81 @@ if(isset($_POST['predict'])){
         $question36, $question37
     ];
 
-    if($gejala == $campak) {
-        echo "prediksi penyakit = campak";
-    } else if ($gejala == $eksim) {
-        echo "prediksi penyakit = eksim";
-    } else if ($gejala == $erisipelas) {
-        echo "prediksi penyakit = erisipelas";
-    } else if ($gejala == $eritrasma) {
-        echo "prediksi penyakit = eritrasma";
-    } else if ($gejala == $favus) {
-        echo "prediksi penyakit = favus";
-    } else if ($gejala == $fixeddrugerupt) {
-        echo "prediksi penyakit = fixeddrugerupt";
-    } else if ($gejala == $folikulitis) {
-        echo "prediksi penyakit = folikulitis";
-    } else if ($gejala == $furunkel) {
-        echo "prediksi penyakit = furunkel";
-    } else if ($gejala == $granulomaanulare) {
-        echo "prediksi penyakit = granulomaanulare";
-    } else if ($gejala == $hemangioma) {
-        echo "prediksi penyakit = hemangioma";
-    } else if ($gejala == $herpes) {
-        echo "prediksi penyakit = herpes";
-    } else if ($gejala == $hypohidrosis) {
-        echo "prediksi penyakit = hypohidrosis";
-    } else if ($gejala == $impetigo) {
-        echo "prediksi penyakit = impetigo";
-    } else if ($gejala == $kandidosismukokutan) {
-        echo "prediksi penyakit = kandidosismukokutan";
-    } else if ($gejala == $keloid) {
-        echo "prediksi penyakit = keloid";
-    } else if ($gejala == $keratosispilaris) {
-        echo "prediksi penyakit = keratosispilaris";
-    } else if ($gejala == $kudis) {
-        echo "prediksi penyakit = kudis";
-    } else if ($gejala == $kurap) {
-        echo "prediksi penyakit = kurap";
-    } else if ($gejala == $kutil) {
-        echo "prediksi penyakit = kutil";
-    } else if ($gejala == $larvamigrans) {
-        echo "prediksi penyakit = larvamigrans";
-    } else if ($gejala == $lepra) {
-        echo "prediksi penyakit = lepra";
-    } else if ($gejala == $lichenplanus) {
-        echo "prediksi penyakit = lichenplanus";
-    } else if ($gejala == $lukaakibatbahankimia) {
-        echo "prediksi penyakit = luka akibat bahan kimia";
-    } else if ($gejala == $lukaakibatsengatanlistrik) {
-        echo "prediksi penyakit = luka akibat sengatan listrik";
-    } else if ($gejala == $milia) {
-        echo "prediksi penyakit = milia";
-    } else {
-        echo "Tidak ada prediksi penyakit yang sesuai";
-    }
     
+    $nothing_detect = false;
+    if($gejala == $campak) {
+        // echo "prediksi penyakit = campak";
+        $penyakit = "campak";
+    } else if ($gejala == $eksim) {
+        // echo "prediksi penyakit = eksim";
+        $penyakit = "eksim";
+    } else if ($gejala == $erisipelas) {
+        // echo "prediksi penyakit = erisipelas";
+        $penyakit = "erisipelas";
+    } else if ($gejala == $eritrasma) {
+        $penyakit = "eritrasma";
+    } else if ($gejala == $favus) {
+        $penyakit = "favus";
+    } else if ($gejala == $fixeddrugerupt) {
+        $penyakit = "fixeddrugerupt";
+    } else if ($gejala == $folikulitis) {
+        $penyakit = "folikulitis";
+    } else if ($gejala == $furunkel) {
+        $penyakit = "prediksi penyakit = furunkel";
+    } else if ($gejala == $granulomaanulare) {
+        $penyakit = "granulomaanulare";
+    } else if ($gejala == $hemangioma) {
+        $penyakit = "hemangioma";
+    } else if ($gejala == $herpes) {
+        $penyakit = "herpes";
+    } else if ($gejala == $hypohidrosis) {
+        $penyakit = "hypohidrosis";
+    } else if ($gejala == $impetigo) {
+        $penyakit = "impetigo";
+    } else if ($gejala == $kandidosismukokutan) {
+        $penyakit = "kandidosismukokutan";
+    } else if ($gejala == $keloid) {
+        $penyakit = "keloid";
+    } else if ($gejala == $keratosispilaris) {
+        $penyakit = "keratosispilaris";
+    } else if ($gejala == $kudis) {
+        $penyakit = "kudis";
+    } else if ($gejala == $kurap) {
+        $penyakit = "kurap";
+    } else if ($gejala == $kutil) {
+        $penyakit = "kutil";
+    } else if ($gejala == $larvamigrans) {
+        $penyakit = "larvamigrans";
+    } else if ($gejala == $lepra) {
+        $penyakit = "lepra";
+    } else if ($gejala == $lichenplanus) {
+        $penyakit = "lichenplanus";
+    } else if ($gejala == $lukaakibatbahankimia) {
+        $penyakit = "lukaakibatbahankimia";
+    } else if ($gejala == $lukaakibatsengatanlistrik) {
+        $penyakit = "lukaakibatsengatanlistrik";
+    } else if ($gejala == $milia) {
+        $penyakit = "milia";
+    } else {
+        $nothing_detect = true;
+        $penyakit = "Tidak ada prediksi penyakit yang sesuai";
+    }
+
+    $query = mysqli_query($konek,"SELECT * FROM data_penyakit WHERE nama_penyakit = '$penyakit'");
+    while($data=mysqli_fetch_array($query)) {
+        $deskripsi = $data['deskripsi'];
+        $obat = $data['obat'];
+    }
+
+   
+    
+    if($nothing_detect) {
+        $text_deskripsi = "Tidak ada prediksi penyakit yang sesuai";
+        $text_obat = "Tidak ada prediksi penyakit yang sesuai";
+    } else {
+        $text_deskripsi = file_get_contents($deskripsi);
+        $text_obat = file_get_contents($obat);
+    }
 
     // $checkPenerbit = mysqli_query($konek, "SELECT id_penerbit FROM penerbit WHERE nama_penerbit = '$penerbit'");
     // $rowPenerbit = mysqli_fetch_assoc($checkPenerbit);
@@ -161,9 +185,43 @@ if(isset($_POST['predict'])){
     // }
 }
 ?>
-    <br>
-    <a href="index.php"><button type="button" class="btn btn-primary">Kembali</button></a>
 
+    <div class="d-flex align-items-center flex-column">
+        <table class="table table-bordered w-75">
+            <tr>
+                <td>Nama Penyakit</td>
+                <td><p>
+                    <?php
+                        echo $penyakit;
+                    ?>
+                </p></td>
+            </tr>
+            <tr>
+                <td>Deskripsi Penyakit</td>
+                <td><p>
+                    <?php
+                        echo $text_deskripsi;
+                    ?>
+                </p></td>
+            </tr>
+            <tr>
+                <td>Obat dan Penanggulangan</td>
+                <td><p>
+                    <?php
+                        echo $text_obat;
+                    ?>
+                </p></td>
+            </tr>
+        </table>
+        <div class="w-75">
+            <a href="index.php"><button type="button" class="btn btn-primary">Kembali</button></a>
+        </div>
+
+    </div>
+
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
