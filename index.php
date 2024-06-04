@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-    <footer class="text-center py-3 mt-5">
+    <footer class="text-center py-2 mt-5">
         <p>&copy; 2024 Sistem Pakar Deteksi Penyakit Kulit. All rights reserved.</p>
     </footer>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>

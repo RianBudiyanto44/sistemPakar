@@ -36,24 +36,113 @@
     <div class="container mt-5">
         <div class="info-panel">
             <h2 class="text-center">Informasi Penyakit Kulit</h2>
-            <table class="table table-light table-striped table-striped-columns">
+            <table class="table table-light table-striped table-striped-columns text-center">
                 <thead>
                     <tr>
+                        <th scope="col">Kode</th>
                         <th scope="col">Nama Penyakit</th>
-                        <th scope="col">Deskripsi</th>
-                        <th scope="col">Penanganan</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>P001</td>
+                        <td>Campak</td>
                     </tr>
                     <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td>P002</td>
+                        <td>Eksim</td>
+                    </tr>
+                    <tr>
+                        <td>P003</td>
+                        <td>erisipelas</td>
+                    </tr>
+                    <tr>
+                        <td>P004</td>
+                        <td>eritrasma</td>
+                    </tr>
+                    <tr>
+                        <td>P005</td>
+                        <td>favus</td>
+                    </tr>
+                    <tr>
+                        <td>P006</td>
+                        <td>fixeddrugerupt</td>
+                    </tr>
+                    <tr>
+                        <td>P007</td>
+                        <td>folikulitis</td>
+                    </tr>
+                    <tr>
+                        <td>P008</td>
+                        <td>furunkel</td>
+                    </tr>
+                    <tr>
+                        <td>P009</td>
+                        <td>granulomaanulare</td>
+                    </tr>
+                    <tr>
+                        <td>P010</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P011</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P012</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P013</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P014</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P015</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P016</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P017</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P018</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P019</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P020</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P021</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P022</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P023</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P024</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P025</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>

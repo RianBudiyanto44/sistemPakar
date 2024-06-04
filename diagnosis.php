@@ -39,120 +39,177 @@
             <h2 class="text-center p-3">Sistem Pakar Deteksi Penyakit Kulit</h2>
             <form method="post" action="backend.php">
                 <div class="form-group">
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda mengalami pembengkakan kulit?</label>
-                    <input type="checkbox" class="form-control" name="question1">
 
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda mengalami benjolan di kulit?</label>
-                    <input type="checkbox" class="form-control" name="question2">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 p-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question1">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda mengalami pembengkakan kulit?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question2">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda mengalami benjolan di kulit?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question3">
+                                <i class="icon fas fa-syringe"></i> Apakah kulit Anda mengeluarkan nanah?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question4">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda demam?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question5">
+                                <i class="icon fas fa-syringe"></i> Apakah mata Anda merah?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question6">
+                                <i class="icon fas fa-syringe"></i> Apakah kulit kepala Anda berminyak?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question7">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda merasakan gatal?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question8">
+                                <i class="icon fas fa-syringe"></i> Apakah ada luka dari bagian mulut?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question9">
+                                <i class="icon fas fa-syringe"></i> Apakah ada semacam gelembung berisi air?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question10">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda merasakan nyeri? </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question11">
+                                <i class="icon fas fa-syringe"></i> Apakah kulit Anda melepuh?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question12">
+                                <i class="icon fas fa-syringe"></i> Apakah timbul bercak-bercak merah?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question13">
+                                <i class="icon fas fa-syringe"></i> Apakah terjadi iritasi kulit?
+                            </label>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question14">
+                                <i class="icon fas fa-syringe"></i> Apakah muncul uban sebelum waktunya?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question15">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda mengalami keringat yang
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question16">
+                                <i class="icon fas fa-syringe"></i> Apakah timbul warna kekuningan pada kulit
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question17">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda mengalami kulit kering?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question18">
+                                <i class="icon fas fa-syringe"></i> Apakah kulit bersisik pada bagian
+                                tertentu?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question19">
+                                <i class="icon fas fa-syringe"></i> Apakah bintik atau bintik merah muncul di
+                                kulit?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question20">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda mengalami ruam kulit?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question21">
+                                <i class="icon fas fa-syringe"></i> Apakah ada luka pada kulit yang perlu
+                                diatasi?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question22">
+                                <i class="icon fas fa-syringe"></i> Apakah ada mati rasa pada kulit?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question23">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda memiliki luka yang tidak terasa
+                                nyeri?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question24">
+                                <i class="icon fas fa-syringe"></i> Apakah kulit tidak berkeringat secara
+                                normal?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question25">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda merasakan kesemutan pada
+                                kulit?
+                            </label>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question26">
+                                <i class="icon fas fa-syringe"></i> Apakah ada benjolan berwarna merah atau kulit
+                                kemerahan?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question27">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda mengalami infeksi kulit?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question28">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda sering mengalami sakit
+                                kepala?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question29">
+                                <i class="icon fas fa-syringe"></i> Apakah ada rasa kelelahan secara umum?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question30">
+                                <i class="icon fas fa-syringe"></i> Apakah Anda mengalami mual?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question31">
+                                <i class="icon fas fa-syringe"></i> Apakah terdapat nyeri otot pada
+                                tubuh?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question32">
+                                <i class="icon fas fa-syringe"></i> Apakah ada benjolan putih di kulit?
+                            </label>
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="question33">
+                                <i class="icon fas fa-syringe"></i> Apakah kulit memiliki bintil atau
+                                tonjolan?
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="question34">
+                                    <i class="icon fas fa-syringe"></i> Apakah ada lesi gatal atau kemerahan pada
+                                    kulit?
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="question35">
+                                    <i class="icon fas fa-syringe"></i> Apakah timbul tonjolan kasar atau
+                                    keras?
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="question36">
+                                    <i class="icon fas fa-syringe"></i> AApakah timbul bintik atau bercak putih yang
+                                    berwarna
+                                    terang?
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="question37">
+                                    <i class="icon fas fa-syringe"></i> Apakah timbul ruam yang berbentuk
+                                    cincin?
+                                </label>
+                        </div>
+                    </div>
 
-                    <label><i class="icon fas fa-syringe"></i> Apakah kulit Anda mengeluarkan nanah?</label>
-                    <input type="checkbox" class="form-control" name="question3">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda demam?</label>
-                    <input type="checkbox" class="form-control" name="question4">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah mata Anda merah?</label>
-                    <input type="checkbox" class="form-control" name="question5">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah kulit kepala Anda berminyak?</label>
-                    <input type="checkbox" class="form-control" name="question6">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda merasakan gatal?</label>
-                    <input type="checkbox" class="form-control" name="question7">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah ada luka dari bagian mulut?</label>
-                    <input type="checkbox" class="form-control" name="question8">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah ada semacam gelembung berisi air?</label>
-                    <input type="checkbox" class="form-control" name="question9">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda merasakan nyeri?</label>
-                    <input type="checkbox" class="form-control" name="question10">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah kulit Anda melepuh?</label>
-                    <input type="checkbox" class="form-control" name="question11">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah timbul bercak-bercak merah?</label>
-                    <input type="checkbox" class="form-control" name="question12">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah terjadi iritasi kulit?</label>
-                    <input type="checkbox" class="form-control" name="question13">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah muncul uban sebelum waktunya?</label>
-                    <input type="checkbox" class="form-control" name="question14">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda mengalami keringat yang berlebihan?</label>
-                    <input type="checkbox" class="form-control" name="question15">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah timbul warna kekuningan pada kulit Anda?</label>
-                    <input type="checkbox" class="form-control" name="question16">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda mengalami kulit kering?</label>
-                    <input type="checkbox" class="form-control" name="question17">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah kulit bersisik pada bagian tertentu?</label>
-                    <input type="checkbox" class="form-control" name="question18">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah bintik atau bintik merah muncul di kulit?</label>
-                    <input type="checkbox" class="form-control" name="question19">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda mengalami ruam kulit?</label>
-                    <input type="checkbox" class="form-control" name="question20">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah ada luka pada kulit yang perlu diatasi?</label>
-                    <input type="checkbox" class="form-control" name="question21">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah ada mati rasa pada kulit?</label>
-                    <input type="checkbox" class="form-control" name="question22">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda memiliki luka yang tidak terasa
-                        nyeri?</label>
-                    <input type="checkbox" class="form-control" name="question23">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah kulit tidak berkeringat secara normal?</label>
-                    <input type="checkbox" class="form-control" name="question24">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda merasakan kesemutan pada kulit?</label>
-                    <input type="checkbox" class="form-control" name="question25">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah ada benjolan berwarna merah atau kulit
-                        kemerahan?</label>
-                    <input type="checkbox" class="form-control" name="question26">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda mengalami infeksi kulit?</label>
-                    <input type="checkbox" class="form-control" name="question27">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda sering mengalami sakit kepala?</label>
-                    <input type="checkbox" class="form-control" name="question28">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah ada rasa kelelahan secara umum?</label>
-                    <input type="checkbox" class="form-control" name="question29">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah Anda mengalami mual?</label>
-                    <input type="checkbox" class="form-control" name="question30">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah terdapat nyeri otot pada tubuh?</label>
-                    <input type="checkbox" class="form-control" name="question31">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah ada benjolan putih di kulit?</label>
-                    <input type="checkbox" class="form-control" name="question32">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah kulit memiliki bintil atau tonjolan?</label>
-                    <input type="checkbox" class="form-control" name="question33">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah ada lesi gatal atau kemerahan pada kulit?</label>
-                    <input type="checkbox" class="form-control" name="question34">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah timbul tonjolan kasar atau keras?</label>
-                    <input type="checkbox" class="form-control" name="question35">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah timbul bintik atau bercak putih yang berwarna
-                        terang?</label>
-                    <input type="checkbox" class="form-control" name="question36">
-
-                    <label><i class="icon fas fa-syringe"></i> Apakah timbul ruam yang berbentuk
-                        cincin?</label>
-                    <input type="checkbox" class="form-control" name="question37">
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </div>
