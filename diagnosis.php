@@ -42,133 +42,133 @@
                     <div class="row align-items-center">
                         <div class="col-md-4 p-2">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question1" value="0"
+                                <input type="checkbox" class="form-check-input" name="question1" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda mengalami pembengkakan kulit?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question2" value="0"
+                                <input type="checkbox" class="form-check-input" name="question2" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda mengalami benjolan di kulit?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question3" value="0"
+                                <input type="checkbox" class="form-check-input" name="question3" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah kulit Anda mengeluarkan nanah?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question4" value="0"
+                                <input type="checkbox" class="form-check-input" name="question4" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda demam?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question5" value="0"
+                                <input type="checkbox" class="form-check-input" name="question5" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah mata Anda merah?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question6" value="0"
+                                <input type="checkbox" class="form-check-input" name="question6" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah kulit kepala Anda berminyak?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question7" value="0"
+                                <input type="checkbox" class="form-check-input" name="question7" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda merasakan gatal?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question8" value="0"
+                                <input type="checkbox" class="form-check-input" name="question8" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah ada luka dari bagian mulut?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question9" value="0"
+                                <input type="checkbox" class="form-check-input" name="question9" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah ada semacam gelembung berisi air?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question10" value="0"
+                                <input type="checkbox" class="form-check-input" name="question10" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda merasakan nyeri? </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question11" value="0"
+                                <input type="checkbox" class="form-check-input" name="question11" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah kulit Anda melepuh?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question12" value="0"
+                                <input type="checkbox" class="form-check-input" name="question12" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah timbul bercak-bercak merah?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question13" value="0"
+                                <input type="checkbox" class="form-check-input" name="question13" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah terjadi iritasi kulit?
                             </label>
                         </div>
                         <div class="col-md-4 p-2">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question14" value="0"
+                                <input type="checkbox" class="form-check-input" name="question14" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah muncul uban sebelum waktunya?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question15" value="0"
+                                <input type="checkbox" class="form-check-input" name="question15" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda mengalami keringat yang
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question16" value="0"
+                                <input type="checkbox" class="form-check-input" name="question16" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah timbul warna kekuningan pada kulit
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question17" value="0"
+                                <input type="checkbox" class="form-check-input" name="question17" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda mengalami kulit kering?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question18" value="0"
+                                <input type="checkbox" class="form-check-input" name="question18" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah kulit bersisik pada bagian
                                 tertentu?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question19" value="0"
+                                <input type="checkbox" class="form-check-input" name="question19" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah bintik atau bintik merah muncul di
                                 kulit?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question20" value="0"
+                                <input type="checkbox" class="form-check-input" name="question20" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda mengalami ruam kulit?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question21" value="0"
+                                <input type="checkbox" class="form-check-input" name="question21" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah ada luka pada kulit yang perlu
                                 diatasi?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question22" value="0"
+                                <input type="checkbox" class="form-check-input" name="question22" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah ada mati rasa pada kulit?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question23" value="0"
+                                <input type="checkbox" class="form-check-input" name="question23" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda memiliki luka yang tidak terasa
                                 nyeri?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question24" value="0"
+                                <input type="checkbox" class="form-check-input" name="question24" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah kulit tidak berkeringat secara
                                 normal?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question25" value="0"
+                                <input type="checkbox" class="form-check-input" name="question25" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda merasakan kesemutan pada
                                 kulit?
@@ -176,69 +176,69 @@
                         </div>
                         <div class="col-md-4 p-2">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question26" value="0"
+                                <input type="checkbox" class="form-check-input" name="question26" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah ada benjolan berwarna merah atau kulit
                                 kemerahan?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question27" value="0"
+                                <input type="checkbox" class="form-check-input" name="question27" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda mengalami infeksi kulit?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question28" value="0"
+                                <input type="checkbox" class="form-check-input" name="question28" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda sering mengalami sakit
                                 kepala?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question29" value="0"
+                                <input type="checkbox" class="form-check-input" name="question29" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah ada rasa kelelahan secara umum?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question30" value="0"
+                                <input type="checkbox" class="form-check-input" name="question30" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah Anda mengalami mual?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question31" value="0"
+                                <input type="checkbox" class="form-check-input" name="question31" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah terdapat nyeri otot pada
                                 tubuh?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question32" value="0"
+                                <input type="checkbox" class="form-check-input" name="question32" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah ada benjolan putih di kulit?
                             </label>
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="question33" value="0"
+                                <input type="checkbox" class="form-check-input" name="question33" value="1"
                                     onclick="updateValue(this)">
                                 <i class="icon fas fa-syringe"></i> Apakah kulit memiliki bintil atau
                                 tonjolan?
                                 <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input" name="question34" value="0"
+                                    <input type="checkbox" class="form-check-input" name="question34" value="1"
                                         onclick="updateValue(this)">
                                     <i class="icon fas fa-syringe"></i> Apakah ada lesi gatal atau kemerahan pada
                                     kulit?
                                 </label>
                                 <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input" name="question35" value="0"
+                                    <input type="checkbox" class="form-check-input" name="question35" value="1"
                                         onclick="updateValue(this)">
                                     <i class="icon fas fa-syringe"></i> Apakah timbul tonjolan kasar atau
                                     keras?
                                 </label>
                                 <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input" name="question36" value="0"
+                                    <input type="checkbox" class="form-check-input" name="question36" value="1"
                                         onclick="updateValue(this)">
                                     <i class="icon fas fa-syringe"></i> Apakah timbul bintik atau bercak putih yang
                                     berwarna
                                     terang?
                                 </label>
                                 <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input" name="question37" value="0"
+                                    <input type="checkbox" class="form-check-input" name="question37" value="1"
                                         onclick="updateValue(this)">
                                     <i class="icon fas fa-syringe"></i> Apakah timbul ruam yang berbentuk
                                     cincin?
@@ -247,8 +247,8 @@
                     </div>
 
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                <table class="table table-hover table table-light table-striped table-striped-columns text-center m-5">
+                <button type="submit" name="predict" class="btn btn-primary btn-block">Submit</button>
+                <!-- <table class="table table-hover table table-light table-striped table-striped-columns text-center m-5">
                     <thead>
                         <tr>
                             <th scope="col">Kode</th>
@@ -265,13 +265,15 @@
                             </td>
                         </tr>
                     </tbody>
-                </table>
+                </table> -->
+            </form>
         </div>
     </div>
     <script>
     function updateValue() {
-        var hiddenInput = document.querySelector(`[name="${checkbox.name}_hidden"]`);
-        hiddenInput.value = checkbox.checked ? 1 : 0;
+        // var hiddenInput = document.querySelector(`[name="${checkbox.name}_hidden"]`);
+        // hiddenInput.value = checkbox.checked ? 1 : 0;
+        // console.log()
     }
     </script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>

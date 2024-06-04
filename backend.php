@@ -7,9 +7,37 @@
     <title>Prediksi</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand text-center" style="font-size: 24px; font-weight: bold;" href="index.php">Pakar
+                Kulit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diagnosis.php">Diagnosis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informasi.php">Informasi Penyakit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2 class="text-center mt-5">Prediksi</h2>
+
 
     <?php
 
@@ -43,43 +71,47 @@ $milia          = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 if(isset($_POST['predict'])){
     
-    $question1 = $_POST['question1'];
-    $question2 = $_POST['question2'];
-    $question3 = $_POST['question3'];
-    $question4 = $_POST['question4'];
-    $question5 = $_POST['question5'];
-    $question6 = $_POST['question6'];
-    $question7 = $_POST['question7'];
-    $question8 = $_POST['question8'];
-    $question9 = $_POST['question9'];
-    $question10 = $_POST['question10'];
-    $question11 = $_POST['question11'];
-    $question12 = $_POST['question12'];
-    $question13 = $_POST['question13'];
-    $question14 = $_POST['question14'];
-    $question15 = $_POST['question15'];
-    $question16 = $_POST['question16'];
-    $question17 = $_POST['question17'];
-    $question18 = $_POST['question18'];
-    $question19 = $_POST['question19'];
-    $question20 = $_POST['question20'];
-    $question21 = $_POST['question21'];
-    $question22 = $_POST['question22'];
-    $question23 = $_POST['question23'];
-    $question24 = $_POST['question24'];
-    $question25 = $_POST['question25'];
-    $question26 = $_POST['question26'];
-    $question27 = $_POST['question27'];
-    $question28 = $_POST['question28'];
-    $question29 = $_POST['question29'];
-    $question30 = $_POST['question30'];
-    $question31 = $_POST['question31'];
-    $question32 = $_POST['question32'];
-    $question33 = $_POST['question33'];
-    $question34 = $_POST['question34'];
-    $question35 = $_POST['question35'];
-    $question36 = $_POST['question36'];
-    $question37 = $_POST['question37'];
+    // $question1 = $_POST['question1'];
+    // $question2 = $_POST['question2'];
+    // $question3 = $_POST['question3'];
+    // $question4 = $_POST['question4'];
+    // $question5 = $_POST['question5'];
+    // $question6 = $_POST['question6'];
+    // $question7 = $_POST['question7'];
+    // $question8 = $_POST['question8'];
+    // $question9 = $_POST['question9'];
+    // $question10 = $_POST['question10'];
+    // $question11 = $_POST['question11'];
+    // $question12 = $_POST['question12'];
+    // $question13 = $_POST['question13'];
+    // $question14 = $_POST['question14'];
+    // $question15 = $_POST['question15'];
+    // $question16 = $_POST['question16'];
+    // $question17 = $_POST['question17'];
+    // $question18 = $_POST['question18'];
+    // $question19 = $_POST['question19'];
+    // $question20 = $_POST['question20'];
+    // $question21 = $_POST['question21'];
+    // $question22 = $_POST['question22'];
+    // $question23 = $_POST['question23'];
+    // $question24 = $_POST['question24'];
+    // $question25 = $_POST['question25'];
+    // $question26 = $_POST['question26'];
+    // $question27 = $_POST['question27'];
+    // $question28 = $_POST['question28'];
+    // $question29 = $_POST['question29'];
+    // $question30 = $_POST['question30'];
+    // $question31 = $_POST['question31'];
+    // $question32 = $_POST['question32'];
+    // $question33 = $_POST['question33'];
+    // $question34 = $_POST['question34'];
+    // $question35 = $_POST['question35'];
+    // $question36 = $_POST['question36'];
+    // $question37 = $_POST['question37'];
+
+    for ($i = 1; $i <= 37; $i++) {
+        ${"question$i"} = isset($_POST["question$i"]) ? $_POST["question$i"] : '0';
+    }
 
         $gejala = [
             $question1, $question2, $question3, $question4, $question5,
@@ -92,7 +124,6 @@ if(isset($_POST['predict'])){
             $question36, $question37
         ];
 
-    
     $nothing_detect = false;
     if($gejala == $campak) {
         // echo "prediksi penyakit = campak";
@@ -152,6 +183,8 @@ if(isset($_POST['predict'])){
         $penyakit = "Tidak ada prediksi penyakit yang sesuai";
     }
 
+    echo $nothing_detect;
+
     $query = mysqli_query($konek,"SELECT * FROM data_penyakit WHERE nama_penyakit = '$penyakit'");
     while($data=mysqli_fetch_array($query)) {
         $deskripsi = $data['deskripsi'];
@@ -187,7 +220,7 @@ if(isset($_POST['predict'])){
 }
 ?>
 
-    <div class="d-flex align-items-center flex-column">
+    <div class="d-flex align-items-center flex-column mt-3">
         <table class="table table-bordered w-75">
             <tr>
                 <td>Nama Penyakit</td>

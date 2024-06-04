@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informasi Penyakit Kulit</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <a class="navbar-brand text-center" style="font-size: 24px; font-weight: bold;" href="index.php">Pakar
                 Kulit</a>
@@ -34,124 +32,156 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-5">
-        <div class="info-panel">
-            <h2 class="text-center">Informasi Penyakit Kulit</h2>
-            <table class="table table-hover table table-light table-striped table-striped-columns text-center">
+    <div class="container text-center">
+        <h1 class="mb-5 mt-5">Informasi Penyakit Kulit</h1>
+        <div class="row">
+            <div class="col">
+            <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">Kode</th>
                         <th scope="col">Nama Penyakit</th>
                     </tr>
                 </thead>
-                <tbody>
+                    <?php
+                        include 'connect.php';
+                        // if(isset($_GET['search'])){
+                        //   $search = $_GET['search'];
+                        //   $query = mysqli_query($konek,"SELECT * FROM buku LEFT JOIN penerbit ON buku.penerbit = penerbit.id_penerbit WHERE nama LIKE '%$search%'");
+                        // } else {
+                        //   $query = mysqli_query($konek,"SELECT * FROM buku LEFT JOIN penerbit ON buku.penerbit = penerbit.id_penerbit");
+                        // }
+                        $query = mysqli_query($konek,"SELECT * FROM data_penyakit WHERE id < 13");
+                        
+                        while($data=mysqli_fetch_array($query))
+                        { 
+                        ?>
+        
+        
                     <tr>
-                        <td>P001</td>
-                        <td>Campak</td>
+                        <!-- <th scope="row">1</th> -->
+                        <td>P0<?php echo $data['id']; ?></td>
+                        <td><a href="informasi.php?id=<?php echo $data['id'];?>" style="color: black;"><?php echo $data['nama_penyakit']; ?></a></td>
                     </tr>
-                    <tr>
-                        <td>P002</td>
-                        <td>Eksim</td>
-                    </tr>
-                    <tr>
-                        <td>P003</td>
-                        <td>erisipelas</td>
-                    </tr>
-                    <tr>
-                        <td>P004</td>
-                        <td>eritrasma</td>
-                    </tr>
-                    <tr>
-                        <td>P005</td>
-                        <td>favus</td>
-                    </tr>
-                    <tr>
-                        <td>P006</td>
-                        <td>fixeddrugerupt</td>
-                    </tr>
-                    <tr>
-                        <td>P007</td>
-                        <td>folikulitis</td>
-                    </tr>
-                    <tr>
-                        <td>P008</td>
-                        <td>furunkel</td>
-                    </tr>
-                    <tr>
-                        <td>P009</td>
-                        <td>granulomaanulare</td>
-                    </tr>
-                    <tr>
-                        <td>P010</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P011</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P012</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P013</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P014</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P015</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P016</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P017</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P018</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P019</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P020</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P021</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P022</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P023</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P024</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P025</td>
-                        <td></td>
-                    </tr>
-                </tbody>
+                    <?php }?>
             </table>
+            </div>
+            <div class="col">
+            <table class="table table-bordered">
+            <thead>
+                    <tr>
+                        <th scope="col">Kode</th>
+                        <th scope="col">Nama Penyakit</th>
+                    </tr>
+                </thead>
+                    <?php
+                        include 'connect.php';
+                        // if(isset($_GET['search'])){
+                        //   $search = $_GET['search'];
+                        //   $query = mysqli_query($konek,"SELECT * FROM buku LEFT JOIN penerbit ON buku.penerbit = penerbit.id_penerbit WHERE nama LIKE '%$search%'");
+                        // } else {
+                        //   $query = mysqli_query($konek,"SELECT * FROM buku LEFT JOIN penerbit ON buku.penerbit = penerbit.id_penerbit");
+                        // }
+                        $query = mysqli_query($konek,"SELECT * FROM data_penyakit WHERE id > 12 AND id < 25");
+                        
+                        while($data=mysqli_fetch_array($query))
+                        { 
+                        ?>
+        
+        
+                    <tr>
+                        <!-- <th scope="row">1</th> -->
+                        <td>P0<?php echo $data['id']; ?></td>
+                        <td><a href="informasi.php?id=<?php echo $data['id'];?>" style="color: black;"><?php echo $data['nama_penyakit']; ?></a></td>
+                    </tr>
+                    <?php }?>
+            </table>
+            </div>
+            <div class="col">
+            <table class="table table-bordered">
+            <thead>
+                    <tr>
+                        <th scope="col">Kode</th>
+                        <th scope="col">Nama Penyakit</th>
+                    </tr>
+                </thead>
+                    <?php
+                        include 'connect.php';
+                        // if(isset($_GET['search'])){
+                        //   $search = $_GET['search'];
+                        //   $query = mysqli_query($konek,"SELECT * FROM buku LEFT JOIN penerbit ON buku.penerbit = penerbit.id_penerbit WHERE nama LIKE '%$search%'");
+                        // } else {
+                        //   $query = mysqli_query($konek,"SELECT * FROM buku LEFT JOIN penerbit ON buku.penerbit = penerbit.id_penerbit");
+                        // }
+                        $query = mysqli_query($konek,"SELECT * FROM data_penyakit WHERE id > 24");
+                        
+                        while($data=mysqli_fetch_array($query))
+                        { 
+                        ?>
+        
+        
+                    <tr>
+                        <!-- <th scope="row">1</th> -->
+                        <td>P0<?php echo $data['id']; ?></td>
+                        <td><a href="informasi.php?id=<?php echo $data['id'];?>" style="color: black;"><?php echo $data['nama_penyakit']; ?></a></td>
+                    </tr>
+                    <?php }?>
+            </table>
+            </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
 
+    <?php
+        include 'connect.php';
+
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
+            // echo $id;
+
+            $query = mysqli_query($konek,"SELECT * FROM data_penyakit WHERE id = '$id'");
+            while($data=mysqli_fetch_array($query)) {
+                $penyakit = $data['nama_penyakit'];
+                $deskripsi = $data['deskripsi'];
+                $obat = $data['obat'];
+            }
+
+            $text_deskripsi = file_get_contents($deskripsi);
+            $text_obat = file_get_contents($obat);
+    ?>
+        <div class="d-flex align-items-center flex-column">
+        <h2 class="mb-5 mt-5 text-center">Deskripsi</h2>
+        <table class="table table-bordered w-75">
+            <tr>
+                <td>Nama Penyakit</td>
+                <td><p>
+                    <?php
+                        echo $penyakit;
+                    ?>
+                </p></td>
+            </tr>
+            <tr>
+                <td>Deskripsi Penyakit</td>
+                <td><p>
+                    <?php
+                        echo $text_deskripsi;
+                    ?>
+                </p></td>
+            </tr>
+            <tr>
+                <td>Obat dan Penanggulangan</td>
+                <td><p>
+                    <?php
+                        echo $text_obat;
+                    ?>
+                </p></td>
+            </tr>
+        </table>
+
+    </div>
+    <?php
+        }
+    ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
