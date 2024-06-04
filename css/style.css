@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-custom {
+    background-color: #007bff;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #fff;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffc107;
+}
+
+.jumbotron-custom {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+.btn-custom {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-custom:hover {
+    background-color: #e0a800;
+    color: #fff;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.img-fluid {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
