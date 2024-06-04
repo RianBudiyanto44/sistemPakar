@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-custom {
-    background-color: #007bff;
+    background-color: #050C9C;
 }
 
 .navbar-custom .navbar-brand,
@@ -32,10 +32,6 @@ body {
 }
 
 footer {
-    background-color: #007bff;
+    background-color: #050C9C;
     color: #fff;
-}
-
-.img-fluid {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

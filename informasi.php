@@ -15,8 +15,7 @@
         <div class="container">
             <a class="navbar-brand text-center" style="font-size: 24px; font-weight: bold;" href="index.php">Pakar
                 Kulit</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -37,8 +36,27 @@
     <div class="container mt-5">
         <div class="info-panel">
             <h2 class="text-center">Informasi Penyakit Kulit</h2>
-            <p>Di halaman ini, Anda dapat menemukan informasi tentang berbagai penyakit kulit.</p>
-            <!-- Add your disease information here -->
+            <table class="table table-light table-striped table-striped-columns">
+                <thead>
+                    <tr>
+                        <th scope="col">Nama Penyakit</th>
+                        <th scope="col">Deskripsi</th>
+                        <th scope="col">Penanganan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

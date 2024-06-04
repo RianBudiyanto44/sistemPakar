@@ -37,7 +37,7 @@
     </nav>
     <div class="container mt-5">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6 p-0">
                 <div class="jumbotron jumbotron-custom">
                     <h1 class="display-4">Selamat Datang di Sistem Pakar Deteksi Penyakit Kulit</h1>
                     <p class="lead">Deteksi dini berbagai penyakit kulit dengan mudah dan cepat menggunakan sistem pakar
@@ -48,8 +48,8 @@
                             class="fas fa-stethoscope"></i> Mulai Diagnosis</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="assets/images/penyakitKulit.jpeg" alt="Healthcare Image" class="img-fluid rounded">
+            <div class="col-md-6 p-0">
+                <img src="assets/images/penyakitKulit.jpeg" alt="Healthcare Image" class="img-fluid">
             </div>
         </div>
     </div>
